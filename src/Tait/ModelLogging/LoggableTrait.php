@@ -6,17 +6,31 @@ use Auth;
 trait LoggableTrait
 {
     /**
-     * Get the logs for this object
+     * Get all logs for this object
      *
      * @return collection
      */
-    public function getLogs()
+    public function getAllLogs()
     {
         return ModelLog::
             with('user')
             ->where('content_id', '=', $this->id)
             ->where('content_type', '=', class_basename($this))
             ->get();
+    }
+
+    /**
+     * Get paginated logs for this object
+     *
+     * @return collection
+     */
+    public function getPaginatedLogs($per_page = 10)
+    {
+        return ModelLog::
+            with('user')
+            ->where('content_id', '=', $this->id)
+            ->where('content_type', '=', class_basename($this))
+            ->paginate($per_page);
     }
 
     /**
