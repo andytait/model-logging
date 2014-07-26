@@ -18,10 +18,11 @@ Add the LoggableTrait to a model you want to log actions on
 
 use Tait\ModelLogging\LoggableTrait;
 
-class Order extends Eloquent  {
-
+class Order extends Eloquent
+{
     use LoggableTrait;
 
+    ...
 }
 ```
 
