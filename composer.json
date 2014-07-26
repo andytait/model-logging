@@ -1,0 +1,20 @@
+{
+    "name": "tait/model-logging",
+    "description": "",
+    "authors": [
+        {
+            "name": "Andy Tait",
+            "email": "andy.s.tait@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Tait\\ModelLogging": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
