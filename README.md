@@ -38,7 +38,7 @@ $order->saveLog([
 ]);
 ```
 
-The saveLog method has some sensible defaults for saving the content id, content type, and user id. All settings can be overriden by setting the appropriate key.
+The saveLog method has some sensible defaults for saving the content id, content type, and user id. All settings can be overriden by setting the appropriate key. The following example displays what options you can set on the saveLog method.
 
 ```php
 $order->saveLog([
