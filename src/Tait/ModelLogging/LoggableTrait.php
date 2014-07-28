@@ -10,7 +10,7 @@ trait LoggableTrait
      *
      * @return collection
      */
-    public function getAllLogs()
+    protected function getAllLogs()
     {
         return ModelLog::
             with('user')
@@ -24,7 +24,7 @@ trait LoggableTrait
      *
      * @return collection
      */
-    public function getPaginatedLogs($per_page = 10)
+    protected function getPaginatedLogs($per_page = 10)
     {
         return ModelLog::
             with('user')
