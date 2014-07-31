@@ -40,7 +40,7 @@ trait LoggableTrait
      *
      * @return void
      */
-    public function saveLog(array $settings)
+    public function saveLog(array $settings = array())
     {
         $log = new ModelLog;
 
