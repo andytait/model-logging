@@ -11,6 +11,12 @@ This package assumes you're using Eloquent as your ORM.
 
 ### Example
 
+Firstly, run the migration to create the "model_logging" table
+
+```php
+php artisan migrate --package=tait/model-logging
+```
+
 Add the LoggableTrait to a model you want to log actions on
 
 ```php
